@@ -24,8 +24,8 @@ public class ConfigHelper {
         return getConfig().browserName();
     }
 
-    public static String getWebDriverRemote() {
-        return getConfig().webDriverRemote();
+    public static String getWebdriverRemote() {
+        return getConfig().webdriverRemote();
     }
 
 

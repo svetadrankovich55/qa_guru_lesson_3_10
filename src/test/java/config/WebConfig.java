@@ -4,8 +4,8 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "system:properties",
-        "classpath:${environment}.properties"
+        "classpath:local.properties",
+        "classpath:remote.properties"
 })
 public interface WebConfig extends Config {
 
@@ -25,5 +25,5 @@ public interface WebConfig extends Config {
     String browserName();
 
     @Key("webdriver.remote")
-    String webDriverRemote();
+    String webdriverRemote();
 }
