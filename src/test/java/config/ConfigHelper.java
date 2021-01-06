@@ -30,7 +30,7 @@ public class ConfigHelper {
 
 
     private static WebConfig getConfig() {
-        if (System.getProperty("environment") == null) System.setProperty("environment", "remote");
+        if (System.getProperty("environment") == null) System.setProperty("environment", "local");
         return ConfigFactory.newInstance().create(WebConfig.class, System.getProperties());
     }
 
