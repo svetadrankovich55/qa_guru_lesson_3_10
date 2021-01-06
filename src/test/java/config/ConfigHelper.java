@@ -30,12 +30,8 @@ public class ConfigHelper {
 
 
     private static WebConfig getConfig() {
-        if (System.getProperty("environment") == null) System.setProperty("environment", "local");
+        if (System.getProperty("environment") == null) System.setProperty("environment", "remote");
         return ConfigFactory.newInstance().create(WebConfig.class, System.getProperties());
     }
-
-    /*public static String getPassword() {
-        return getConfig().searchPassword();
-    }*/
 
 }
