@@ -4,8 +4,8 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "classpath:local.properties",
-        "classpath:remote.properties"
+        "classpath:web.local.properties",
+        "classpath:web.remote.properties"
 })
 public interface WebConfig extends Config {
 

@@ -2,11 +2,9 @@ package config;
 
 import org.aeonbits.owner.ConfigFactory;
 
-public class ConfigHelper {
+public class WebConfigHelper {
 
-    public static String getSearchUrl() {
-        return getConfig().searchUrl();
-    }
+    public static String getSearchUrl() { return getConfig().searchUrl(); }
 
     public static String getSearchItem() {
         return getConfig().searchItem();
